@@ -1,0 +1,24 @@
+.about {
+    padding: 1vw 23.5vw;
+    
+    
+    &__text {
+
+        &__creditis {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            &__header {
+                margin-bottom: 10px;
+            }
+        }
+
+    
+    }
+}
+
+p {
+    text-align: center;
+}
