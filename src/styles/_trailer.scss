@@ -1,0 +1,13 @@
+.trailer {
+    padding: 1vw 23.5vw;
+
+    &__video {
+        column-count: 2;
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+        }
+    }
+}
