@@ -3,6 +3,8 @@
 @use 'about';
 @use 'cast';
 @use 'trailer';
+@use 'footer';
+@use 'header';
 
 
 * {
@@ -20,7 +22,6 @@ body {
     background-color: variaveis.$colorDeFundo;
 }
 
-
 @mixin text($fontSize: 32px) {
     font-size: $fontSize;
     color: variaveis.$corTextoPrincipal;
@@ -35,10 +36,14 @@ body {
     @include title;
 }
 
-.text {
+.text--big {
     @include text;
 }
 
-.text--small {
+.text{
     @include text(22px);
 } 
+
+.text--small {
+    @include text(16);
+}

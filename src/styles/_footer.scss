@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+.footer {
+    padding: 1vw 23.5vw;
+
+    &__social {
+        
+        font-size: 20px;
+        color: variaveis.$corTitulos;
+        margin-bottom: 10px;
+        
+        &__link {
+    
+        display: flex;
+        justify-content: center;
+        
+        list-style: none;
+        gap: 10px;
+
+        a {
+            color: variaveis.$corTitulos;
+        }
+   
+        
+    }
+        
+
+    }
+}

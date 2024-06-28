@@ -3,22 +3,16 @@
 .hero {
     
     &__content {
-
+        
         &__video {
-            padding: 1vw 23.5vw;
-            margin-top: -150px;
-
-            &__trailer {
-                width: 100%;
-                height: 563px;
-                border-radius: 6px;
-            }
+            width: 100%;
         }
     }
 
-}
-
-img { 
-    width: 100%;
+    img { 
+        padding: 1vw 23.5vw;
+        width: 100%;
+    }
+    
 
 }

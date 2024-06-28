@@ -4,11 +4,12 @@
     &__photo {
         column-count: 3;
         margin-top: 10px;
-    }
-}
 
-img {
-    width: 100%;
-    border-radius: 4px;
-    
+        img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            
+        }
+    }
 }
