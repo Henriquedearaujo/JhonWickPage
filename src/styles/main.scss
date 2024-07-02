@@ -5,11 +5,12 @@
 @use 'trailer';
 @use 'footer';
 @use 'header';
+@use 'slide';
 
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -22,6 +23,11 @@ body {
     background-color: variaveis.$colorDeFundo;
 }
 
+p {
+    text-align: center;
+    
+}
+
 @mixin text($fontSize: 32px) {
     font-size: $fontSize;
     color: variaveis.$corTextoPrincipal;
@@ -30,6 +36,10 @@ body {
 @mixin title($fontSize: 44px) {
     font-size: $fontSize;
     color: variaveis.$corTitulos;
+}
+
+.title {
+    @include title(32px);
 }
 
 .title--big {

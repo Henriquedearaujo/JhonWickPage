@@ -1,0 +1,26 @@
+.slideshow {
+
+    .slideshow_container {
+        padding: 0vw 12vw;
+        position: relative;
+        margin: auto;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    img {
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+}

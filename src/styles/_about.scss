@@ -1,6 +1,6 @@
 .about {
-    padding: 1vw 23.5vw;
-    background-image: url(../images/bg.jpg);
+    padding: 2vw 12vw;
+    
     
     
     &__text {
@@ -9,17 +9,21 @@
             margin-top: 40px;
             margin-bottom: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 100px;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                display: inline;
+                text-align: center;
+                
+            }
 
             &__header {
-                margin-bottom: 10px;
+                margin: 10px;
             }
         }
-
-    
+        
     }
-}
 
-p {
-    text-align: center;
 }

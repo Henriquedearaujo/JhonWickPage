@@ -1,15 +1,22 @@
 .cast {
-    padding: 1vw 23.5vw;
+    padding: 2vw 12vw;
    
     &__photo {
         column-count: 3;
-        margin-top: 10px;
+        margin-top: 5px;
 
         img {
             width: 100%;
             border-radius: 4px;
             margin-bottom: 16px;
             
+        }
+    }
+    @media (max-width: 768px) {
+        h2{
+
+            margin-top: 30px;
+
         }
     }
 }

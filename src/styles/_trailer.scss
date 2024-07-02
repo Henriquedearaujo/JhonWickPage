@@ -1,17 +1,25 @@
 .trailer {
-    padding: 1vw 23.5vw;
+    padding: 2vw 12vw;
 
     &__video {
         display: flex;
-        justify-content: space-between;
-
+            justify-content: center;
         gap: 30px;
         border: none;
-
+        
+        @media (max-width: 768px) {
+            width: 100%;
+            display: inline;
+            text-align: center;
+        }
         iframe {
-
             max-width: 100%;
+
+            @media (max-width: 768px) {
+                height: 150px;
+                margin-bottom: 30px;
+            }
+        }
 
         }
     }
-}

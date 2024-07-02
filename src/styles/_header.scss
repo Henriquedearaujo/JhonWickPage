@@ -1,11 +1,17 @@
 @use 'variaveis';
 
 .header {
+    z-index: 1;
+    padding: 2vw 12vw;
     width: 100%;
     align-items: center;
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
 
     &__container {
         padding: 8px 36px;
@@ -14,25 +20,41 @@
     }
 
     &__logo {
-        max-width: 80px;
+
         width: 100%;
         margin: 5px;
-        transition: opacity .5s ease;
+        opacity: .5;
+
+        @media (max-width: 768px) {
+            max-width: 64px;
+        }
+
+    }
+
+    img:hover {
+        opacity: 1;
     }
 
     &__links {
         display: flex;
+        cursor: pointer;
+        opacity: 5;
 
         &__item {
-            margin: 5px;
+            margin: 10px;
             transition: opacity .5s ease;
-            list-style-type: none;
-            transition: opacity .5s ease;
+            list-style: none;
+
 
             a {
                 text-decoration: none;
+
             }
-            
+
+            a:hover {
+                color: variaveis.$corTitulos;
+            }
+
         }
 
     }
